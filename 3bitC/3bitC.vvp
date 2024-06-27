@@ -1,0 +1,31 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002b712d066f0 .scope module, "bit3C" "bit3C" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 3 "A";
+    .port_info 1 /INPUT 3 "B";
+    .port_info 2 /OUTPUT 1 "equals";
+    .port_info 3 /OUTPUT 1 "greater";
+    .port_info 4 /OUTPUT 1 "lesser";
+o000002b712c36fa8 .functor BUFZ 3, C4<zzz>; HiZ drive
+v000002b712d06ea0_0 .net "A", 2 0, o000002b712c36fa8;  0 drivers
+o000002b712c36fd8 .functor BUFZ 3, C4<zzz>; HiZ drive
+v000002b712c36a20_0 .net "B", 2 0, o000002b712c36fd8;  0 drivers
+v000002b712c36710_0 .net "equals", 0 0, L_000002b712d069c0;  1 drivers
+v000002b712d06880_0 .net "greater", 0 0, L_000002b712d06a60;  1 drivers
+v000002b712d06920_0 .net "lesser", 0 0, L_000002b712d0eb90;  1 drivers
+L_000002b712d069c0 .cmp/eq 3, o000002b712c36fa8, o000002b712c36fd8;
+L_000002b712d06a60 .cmp/gt 3, o000002b712c36fa8, o000002b712c36fd8;
+L_000002b712d0eb90 .cmp/gt 3, o000002b712c36fd8, o000002b712c36fa8;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "3bitC.v";

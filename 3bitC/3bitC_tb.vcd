@@ -1,0 +1,54 @@
+$date
+	Mon Dec 18 11:58:16 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module bit3C_tb $end
+$var wire 1 ! LS $end
+$var wire 1 " GT $end
+$var wire 1 # EQ $end
+$var reg 3 $ A [2:0] $end
+$var reg 3 % B [2:0] $end
+$scope module UUT $end
+$var wire 3 & A [2:0] $end
+$var wire 3 ' B [2:0] $end
+$var wire 1 ! lesser $end
+$var wire 1 " greater $end
+$var wire 1 # equals $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx '
+bx &
+bx %
+bx $
+x#
+x"
+x!
+$end
+#20
+0#
+0"
+1!
+b110 %
+b110 '
+b10 $
+b10 &
+#50
+1"
+b10 %
+b10 '
+0#
+0!
+b110 $
+b110 &
+#70
